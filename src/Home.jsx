@@ -10,7 +10,7 @@ import {
   PointElement,
   LineElement,
 } from "chart.js";
-import { dummyDataSets } from "./assets/data"; // Import dummy data from external file
+import { dummyDataSets } from "./assets/data"; 
 
 ChartJS.register(
   ArcElement,
@@ -31,7 +31,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setData(dummyDataSets[timeFilter]);
-    }, 500); // Simulate a delay for data fetching
+    }, 500); 
   }, [timeFilter]);
 
   return (
